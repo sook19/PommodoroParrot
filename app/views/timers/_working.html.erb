@@ -3,9 +3,19 @@
 </div>
 
 <div class ="timer_form">
-  <h4>
-    25:00
-  </h4>
+      <div id="clock"></div>
+      </div>
+
+      <script src="assets/js/flipclock.min.js"></script>
+      <script>
+        var clock = $('#clock').FlipClock({
+          countdown: true,
+          clockFace: "MinuteCounter"
+        });
+        clock.setTime(1500)
+        clock.start()
+      </script>
+
 </div>
 
 
