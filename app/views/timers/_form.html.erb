@@ -11,7 +11,7 @@
     </div>
   <% end %>
 
-<% render "/timers/#{@timer.status.downcase}" %>
+<%= render "/timers/#{@timer.status.downcase}" %>
 
   <%= f.hidden_field :survey_id %>
   <div class="field">
