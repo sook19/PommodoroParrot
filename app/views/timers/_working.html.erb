@@ -13,11 +13,16 @@
         });
         clock.setTime(1500)
         clock.start()
+
+        var playSound = function(){
+          document.getElementById('letsdoit').play();
+        }
+        setTimeout(playSound, 15000);
       </script>
 
 </div>
 
 
-<audio autoplay="autoplay">
+<audio id="letsdoit">
   <source src="<%= audio_path 'shortened.wav' %>">
-  </audio>
+</audio>
