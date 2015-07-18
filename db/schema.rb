@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150718095705) do
+ActiveRecord::Schema.define(version: 20150718105815) do
 
   create_table "surveys", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20150718095705) do
     t.integer  "loops_completed"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.string   "status"
   end
 
   add_index "timers", ["survey_id"], name: "index_timers_on_survey_id"
