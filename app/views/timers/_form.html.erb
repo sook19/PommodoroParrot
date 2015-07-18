@@ -14,9 +14,10 @@
 <%= render "/timers/#{@timer.status.downcase}" %>
 
   <%= f.hidden_field :survey_id %>
-  <div class="field">
-    <%= f.label :loops_completed %><br>
+<!--  <div class="field">
+#    <%= f.label :loops_completed %><br>
     <%= f.number_field :loops_completed %> (<%= @survey.loops%>)
+  !-->
   </div>
   <div class="field">
     <%= f.label :status %><br>
