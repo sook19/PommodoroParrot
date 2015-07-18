@@ -6,9 +6,22 @@ h1 {
   color: #E80046;
 }
 
-.timer {
+h4 {
+  font-family:Courier New;
+  color: #E80046;
+}
+
+.timer_form {
   font-familiy: Courier New;
   font-size: 80px;
   color: #E80046;
   text-align: center;
+  width: 160px;
+  height: 110px;
+  margin: 0 auto;
+  background-image: url("http://i.imgur.com/YwcK1PO.jpg?2");
+  background-position: center center;
+  background-size: contain;
+  padding: 170px 220px 250px 140px;
+  background-repeat: no-repeat;
 }

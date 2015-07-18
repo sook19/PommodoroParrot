@@ -2,7 +2,7 @@ class Timer < ActiveRecord::Base
   belongs_to :survey
 
   before_validation :set_loops_completed
-  
+
   def set_loops_completed
     if new_record?
       self.loops_completed = 0
