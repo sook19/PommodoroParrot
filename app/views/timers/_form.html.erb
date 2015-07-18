@@ -14,7 +14,11 @@
   <%= f.hidden_field :survey_id %>
   <div class="field">
     <%= f.label :loops_completed %><br>
-    <%= f.number_field :loops_completed %>
+    <%= f.number_field :loops_completed %> (<%= @survey.loops%>)
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.text_field :status %>
   </div>
   <div class="actions">
     <%= f.submit "Smash the tomato?"%>

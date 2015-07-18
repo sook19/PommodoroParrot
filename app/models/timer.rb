@@ -4,13 +4,14 @@ class Timer < ActiveRecord::Base
   before_validation :set_loops_completed
 
   def set_loops_completed
+    return if status == "Done"
     if new_record?
       self.loops_completed = 0
     else
       self.loops_completed +=1
     end
 
-    if loops_completed < 4
+    if loops_completed < (survey.loops*2)
         set_status
     else
       self.status = "Done"

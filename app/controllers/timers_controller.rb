@@ -42,7 +42,7 @@ class TimersController < ApplicationController
   def update
     respond_to do |format|
       if @timer.update(timer_params)
-        format.html { redirect_to @timer, notice: 'Timer was successfully updated.' }
+        format.html { redirect_to @timer.survey, notice: 'Timer was successfully updated.' }
         format.json { render :show, status: :ok, location: @timer }
       else
         format.html { render :edit }
